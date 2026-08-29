@@ -92,10 +92,13 @@ Sign-Connect/
 1. Clone the Repository
 git clone <your-repository-url>
 cd Sign-Connect
+
 2. Install Python Dependencies
 pip install opencv-python mediapipe tensorflow keras numpy scikit-learn
+
 3. Install Backend Dependencies
 npm install
+
 4. Configure MongoDB
 
 Make sure MongoDB is running locally and configure the database connection.
