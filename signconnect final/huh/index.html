@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Connect - ASL Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <button class="menu-btn" id="menuBtn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="logo-container">
+                    <span class="logo-text">Sign Connect</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="user-btn" id="userBtn">
+                    <div class="user-avatar" id="headerUserAvatar">S</div>
+                    <span class="user-name" id="headerUserName">Sign Connect User</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-mobile-header">
+            <span class="logo-text-mobile">Sign Connect</span>
+            <button class="close-btn" id="closeBtn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="sidebar-logo">
+            <span class="logo-text-desktop">Sign Connect</span>
+            <p class="sidebar-subtitle">Learn Sign Language</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <button class="nav-item active" data-page="home">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Home</span>
+            </button>
+            <button class="nav-item" data-page="asl-learning">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"></path>
+                    <path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                </svg>
+                <span>ASL Learning</span>
+            </button>
+            <button class="nav-item" data-page="daily-tasks">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+                <span>Daily Tasks</span>
+            </button>
+            <button class="nav-item" data-page="visual-interpreter">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+                <span>Visual Interpreter</span>
+            </button>
+            <button class="nav-item" data-page="donation">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <span>Donation</span>
+            </button>
+            <button class="nav-item" data-page="about">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>About</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-decoration"></div>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container" id="mainContainer">
+            <!-- Content will be injected here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Profile Modal -->
+    <div class="profile-modal-backdrop" id="profileModalBackdrop">
+        <div class="profile-modal">
+            <button class="profile-modal-close" id="profileModalClose">✕</button>
+            <div class="profile-modal-content">
+                <h2 class="profile-modal-title">Edit Profile</h2>
+
+                <div class="profile-avatar-section">
+                    <div class="profile-avatar-wrapper">
+                        <div class="profile-avatar-image" id="profileAvatarImage">
+                            <span id="profileInitials">SC</span>
+                        </div>
+                        <input type="file" id="profileAvatarInput" accept="image/*" style="display: none;">
+                        <button class="profile-avatar-upload" id="profileAvatarUploadBtn">
+                            Click to upload profile picture
+                        </button>
+                    </div>
+                </div>
+
+                <div class="profile-stats-grid">
+                    <div class="profile-stat-card">
+                        <p class="profile-stat-label">Score</p>
+                        <p class="profile-stat-value" id="profileScore">0%</p>
+                    </div>
+                    <div class="profile-stat-card">
+                        <p class="profile-stat-label">Accuracy</p>
+                        <p class="profile-stat-value" id="profileAccuracy">0%</p>
+                    </div>
+                </div>
+
+                <div class="profile-level-card">
+                    <div class="profile-level-header">
+                        <span class="profile-level-label">Current Level</span>
+                        <span class="profile-level-value" id="profileCurrentLevel">Level 1</span>
+                    </div>
+                    <div class="profile-level-bar">
+                        <div class="profile-level-fill" id="profileLevelProgress"></div>
+                    </div>
+                </div>
+
+                <div class="profile-badges-card">
+                    <div class="profile-badges-header">
+                        <span class="profile-badges-icon">🏅</span>
+                        <span class="profile-badges-title">Badges Earned</span>
+                    </div>
+                    <div class="profile-badges-body" id="profileBadgesBody">
+                        <p class="profile-badges-empty">No badges yet. Keep learning to earn badges!</p>
+                        <p class="profile-badges-subtext">Badges will appear here as you progress through your learning journey.</p>
+                    </div>
+                </div>
+
+                <form class="profile-form" id="profileForm">
+                    <label class="profile-field">
+                        <span class="profile-field-label">Name</span>
+                        <input type="text" class="profile-input" id="profileName" value="Sign Connect User">
+                    </label>
+                    <label class="profile-field">
+                        <span class="profile-field-label">Email</span>
+                        <input type="email" class="profile-input" id="profileEmail" value="user123@gmail.com">
+                    </label>
+
+                    <div class="profile-actions">
+                        <button type="button" class="profile-btn profile-btn-secondary" id="profileCancelBtn">Cancel</button>
+                        <button type="submit" class="profile-btn profile-btn-primary">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- MediaPipe drawing helpers (loaded once, used by Visual Interpreter) -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script>
+    // Auth guard — redirect to login if not logged in
+    (function () {
+        if (!localStorage.getItem('sc_logged_in')) {
+            window.location.href = 'login.html';
+        }
+    })();
+    </script>
+    <script src="script.js"></script>
+    <script>
+    // Show logged-in username in header
+    (function () {
+        var username = localStorage.getItem('sc_username') || 'Sign Connect User';
+        var nameEl   = document.getElementById('headerUserName');
+        var avatarEl = document.getElementById('headerUserAvatar');
+        var profileNameEl = document.getElementById('profileName');
+        if (nameEl)        nameEl.textContent  = username;
+        if (avatarEl)      avatarEl.textContent = username.charAt(0).toUpperCase();
+        if (profileNameEl) profileNameEl.value  = username;
+
+        // Double-click user button to logout
+        var userBtn = document.getElementById('userBtn');
+        if (userBtn) {
+            userBtn.title = 'Double-click to logout';
+            userBtn.addEventListener('dblclick', function () {
+                if (confirm('Logout and return to landing page?')) {
+                    localStorage.removeItem('sc_logged_in');
+                    localStorage.removeItem('sc_username');
+                    window.location.href = 'landing.html';
+                }
+            });
+        }
+    })();
+    </script>
+</body>
+</html>
