@@ -107,8 +107,10 @@ Example:
 
 MONGO_URI=mongodb://127.0.0.1:27017/signconnect
 PORT=5000
+
 5. Start the Backend
 node server.js
+
 6. Start the AI Detection Service
 python app.py
 
@@ -128,6 +130,7 @@ Pass the extracted features to the trained ML model.
 Predict the corresponding alphabet/sign.
 Display the prediction in real time.
 Track relevant learning activity and performance.
+
 📊 Dashboard
 
 The Sign Connect dashboard provides users with an overview of their learning progress.
